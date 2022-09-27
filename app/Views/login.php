@@ -7,6 +7,26 @@
         <title>Login</title>
     </head>
     <body>
-        <h1>Login</h1>
+        <div class="container">
+            <h1>Login</h1>
+            
+            <?php if (session()->getFlashdata('msg')) : ?>
+                <div>
+                    <?= session()->getFlashdata('msg') ?>
+                </div>
+            <?php endif; ?>
+
+            <form action="<?php echo base_url(); ?>/LoginController/login" method="post">
+                <div>
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+                <div>
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <div>
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </div>
     </body>
 </html>
