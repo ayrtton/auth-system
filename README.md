@@ -7,6 +7,7 @@ Used Technologies:
 - CSS
 - PHP
 - CodeIgniter
+- PostgreSQL
 - Heroku
 
 Link: https://codeigniter-auth-system.herokuapp.com
