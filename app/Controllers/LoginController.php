@@ -31,9 +31,8 @@ class LoginController extends Controller {
                 ];
 
                 $session->set($sessionData);
-                $session->setFlashdata('msg', 'Login successful.');
 
-                return redirect()->to('/login');
+                return redirect()->to('/profile');
             } else {
                 $session->setFlashdata('msg', 'The password is incorrect.');
 
