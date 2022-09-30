@@ -27,7 +27,7 @@ class LoginController extends Controller {
                     'id'           => $userData['id'],
                     'name'         => $userData['name'],
                     'email'        => $userData['email'],
-                    'is_logged_in' => TRUE
+                    'isLoggedIn' => TRUE
                 ];
 
                 $session->set($sessionData);
