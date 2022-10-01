@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(167, 255, 179, 1) 0%, rgba(0, 135, 18, 0.8) 35%, rgba(0, 230, 50, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Quicksand';
+    font-weight: 300;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    height: 400px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.42);
+    border-radius: 9px;
+}
+
+#title {
+    font-weight: normal;
+    font-size: 45px;
+    text-align: center;
+    margin: 25px auto 30px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    width: 75%;
+    height: 45px;
+    font-size: 20px;
+    font-family: inherit;
+    background-color: #00d8f062;
+    color: white;
+    border: none;
+    padding-left: 30px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+input:focus {
+    outline: none;
+    caret-color: white;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.9);
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(255, 255, 255, 0.9);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#button {
+    width: 75%;
+    height: 45px;
+    cursor: pointer;
+    background-color: #00E521;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#button:hover {
+    background-color: #a0ff30;
+    transition: 0.5s;
+}
+
+hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.726);
+    width: 85%;
+    margin: 30px auto 26px;
+}
+
+#signup-container {
+    text-align: center;
+}
+
+#signup {
+    text-decoration: inherit;
+    color: inherit;
+    font-size: 20px;
+}
