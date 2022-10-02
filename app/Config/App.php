@@ -24,7 +24,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://localhost:8080/';
+    public $baseURL;
 
     /**
      * --------------------------------------------------------------------------
@@ -463,4 +463,18 @@ class App extends BaseConfig
      * @var bool
      */
     public $CSPEnabled = false;
+
+    /**
+     * --------------------------------------------------------------------------
+     * Constructor Method
+     * -------------------------------------------------------------------------- 
+     */
+
+    public function __construct() {
+        if ($_SERVER['SERVER_NAME']== 'localhost') {
+            $this->baseURL = 'http://localhost:8080/';
+        } else{
+            $this->baseURL = 'https://codeigniter-auth-system.herokuapp.com/';
+        }
+    }
 }
