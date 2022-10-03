@@ -8,14 +8,13 @@
         <link rel="stylesheet" href="<?php echo base_url("css/style.css"); ?>">
     </head>
     <body>
+        <?php if (session()->getFlashdata('msg')) : ?>
+            <div id="message">
+                <?= session()->getFlashdata('msg') ?>
+            </div>
+        <?php endif; ?>
         <main>
-            <?php if (session()->getFlashdata('msg')) : ?>
-                <div>
-                    <?= session()->getFlashdata('msg') ?>
-                </div>
-            <?php endif; ?>
-
-            <form action="<?php echo base_url(); ?>/LoginController/login" method="post">
+            <form id="login-form" action="<?php echo base_url(); ?>/LoginController/login" method="post">
                 <h1 id="title">Login</h1>
                 <div class="input-container">
                     <input class="text-input" type="email" name="email" placeholder="Email">
@@ -27,7 +26,7 @@
                     <button id="button" type="submit">Login</button>
                 </div>
                 <hr />
-                <div id="signup-container">
+                <div id="form-footer">
                     <a id="signup" href="signup">Create Account</a>
                 </div>
             </form>

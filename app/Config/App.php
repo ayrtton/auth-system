@@ -471,7 +471,7 @@ class App extends BaseConfig
      */
 
     public function __construct() {
-        if ($_SERVER['SERVER_NAME']== 'localhost') {
+        if ($_SERVER['SERVER_NAME'] == 'localhost') {
             $this->baseURL = 'http://localhost:8080/';
         } else{
             $this->baseURL = 'https://codeigniter-auth-system.herokuapp.com/';

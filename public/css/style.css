@@ -20,8 +20,19 @@ main {
     justify-content: center;
 }
 
-form {
+#message {
+    display: none;
+}
+
+#login-form {
     height: 400px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.42);
+    border-radius: 9px;
+}
+
+#signup-form {
+    height: 530px;
     width: 500px;
     background-color: rgba(0, 0, 0, 0.42);
     border-radius: 9px;
@@ -96,7 +107,7 @@ hr {
     margin: 30px auto 26px;
 }
 
-#signup-container {
+#form-footer {
     text-align: center;
 }
 
