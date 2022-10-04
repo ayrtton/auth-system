@@ -12,6 +12,7 @@
             <?php if (isset($validation)) : ?>
                 <div id="message">
                     <?= $validation->listErrors() ?>
+                    <div id="close-button" onclick="closeMessage()">&times;</div>
                 </div>
             <?php endif; ?>
 
@@ -34,9 +35,10 @@
                 </div>
                 <hr />
                 <div id="form-footer">
-                    <a id="signup" href="signup">Login</a>
+                    <a id="signup" href="/login">Login</a>
                 </div>
             </form>
         </main>
+        <script src="<?php echo base_url("js/javascript.js"); ?>"></script>
     </body>
 </html>

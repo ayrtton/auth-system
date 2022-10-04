@@ -11,8 +11,10 @@
         <?php if (session()->getFlashdata('msg')) : ?>
             <div id="message">
                 <?= session()->getFlashdata('msg') ?>
+                <div id="close-button" onclick="closeMessage()">&times;</div>
             </div>
         <?php endif; ?>
+
         <main>
             <form id="login-form" action="<?php echo base_url(); ?>/LoginController/login" method="post">
                 <h1 id="title">Login</h1>
@@ -31,5 +33,6 @@
                 </div>
             </form>
         </main>
+        <script src="<?php echo base_url("js/javascript.js"); ?>"></script>
     </body>
 </html>

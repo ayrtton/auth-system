@@ -21,7 +21,29 @@ main {
 }
 
 #message {
-    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: blur(5);
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    padding: 20px 30px;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+#close-button {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+}
+
+#close-button:hover {
+    cursor: pointer;
 }
 
 #login-form {
