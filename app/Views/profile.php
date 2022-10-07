@@ -11,6 +11,7 @@
         <main>
             <div id="welcome">
                 <span>Welcome, <?php echo session()->get('name') ?>!</span>
+                <a id="logout" href="<?php echo base_url(); ?>/LoginController/logout">Logout</a>
             </div>
         </main>
         <script src="<?php echo base_url("js/javascript.js"); ?>"></script>

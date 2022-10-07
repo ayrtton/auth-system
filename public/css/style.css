@@ -140,7 +140,20 @@ hr {
 
 #welcome {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px 30px;
+    padding: 20px 45px;
     border-radius: 4px;
     font-weight: 400;
+}
+
+#logout {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+}
+
+#logout:hover {
+    color: rgba(167, 255, 179, 1);
+    transition: 1s;
 }

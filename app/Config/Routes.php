@@ -40,6 +40,8 @@ $routes->get('/', 'LoginController::index');
 $routes->get('/login', 'LoginController::index');
 $routes->match(['get', 'post'], 'LoginController/login', 'LoginController::login');
 
+$routes->match(['get', 'post'], 'LoginController/logout', 'LoginController::logout');
+
 $routes->get('/signup', 'SignUpController::index');
 $routes->match(['get', 'post'], 'SignUpController/store', 'SignUpController::store');
 
